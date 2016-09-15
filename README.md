@@ -1,43 +1,22 @@
 # ng-parallax
 
-### NEW!
-There is now an [Angular2 directive](https://github.com/allenRoyston/ng2-parallax "Angular2 directive") available for those interested!
-
 ### What Am I?!
 An easy way to implement parallax scrolling with Angularjs.  
   - No dependencies
   - Responsive
   - Simple
-  - Works for mobile!  (Well, iPhones at least - haven't tested on an Android yet)
-  - Tiny (only 292B)
-
-
-### Usage
-<code>
-&lt;div ng-parallax pattern="myPattern" speed="0"&gt; &lt; /div&gt; 
-</code>
-
-### Version
-1.1.2
-
-### Updates
- - v1.1.2 - Eliminated jankiness when using Macbook touchpads and touchscreens.
-
+  
 ### Live Demo 
-[Check it out](https://allenroyston.herokuapp.com/access/ng-parallax/index.html "Title")
+[Check it out](http://allenroyston.herokuapp.com/access/demo1/index.html "Title")
 
 
 ### Dependencies
-- None!  (Other than AngularJS).
+- None!  (Other than Angular).
 
-### NPM / Bower
-<code>
-npm install ng-parallax --save-dev
-</code>
-<br>
-<code>
-bower install ng-simple-parallax --save
-</code>
+
+### Version
+1.0.0
+
 
 ### Installation
 Include the module in your scripts.<br>
@@ -50,6 +29,10 @@ Add ngParallax in your apps dependencies.<br>
 var app = angular.module('myApp', ['ngParallax']);
 </code>
 
+### Usage
+<code>
+&lt;div ng-parallax pattern="myPattern" speed="0"&gt; &lt; /div&gt; 
+</code>
 
 ### Parameters
 <code>
@@ -57,13 +40,16 @@ var app = angular.module('myApp', ['ngParallax']);
 </code>
 <br><br>
 speed: 0-3              (slowest to fastest)<br>
+reverse: true/false     (go from up to down)
 
-<ul>
- <li>Setting the speed at 0 will lock the image in place.</li>
- <li> ... unless it's iOS, in which case the image will act as a static image and scroll naturally.</li>
- <li>Using negative numbers reverses the direction.</li>  
- <li>The speed is directly related to the image size, so tinker with your speed to get the right effect.</li>
-</ul>
+
+### Want to Contribute?
+Great!  Just make a fork and submit a pull request. 
+
+### Requirements
+None, just get that local server installed or else you will see nothing. NOTHING!
+
+
 
 
 License
